@@ -1,0 +1,31 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  overflow: hidden; /* Disable scrollbars */
+  display: block; /* No floating content on sides */
+  background-color: black;
+}
+
+#canvas {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+#canvas2d {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+#input {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  /*position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 20;*/
+}
