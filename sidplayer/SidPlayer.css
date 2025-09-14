@@ -93,7 +93,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: white;
+  background: rgb(0, 0, 170);
   border-radius: 12px;
   padding: 12px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -103,6 +103,12 @@ body {
       white-space-collapse: preserve;
     }
   }
+}
+@font-face {
+  font-family: 'Cascadia Mono';
+  src: url('CascadiaMono.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
 }
 .monospace {
   font-family: "Cascadia Mono", sans-serif;
@@ -122,22 +128,12 @@ body {
   padding: 12px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-#channelSelect {
-  max-width: 120px;
-}
-#leftFileSelect,
-#rightFileSelect,
-#channelSelect {
+#fileSelect {
   padding: 5px 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
   background: white;
   font-size: 1em;
-}
-#rightFileSelect,
-#rightOpenFileLabel,
-#rightClear {
-  display: none;
 }
 input[type="file"] {
   display: none;
