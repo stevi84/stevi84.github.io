@@ -93,10 +93,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgb(0, 0, 170);
+  background: rgb(0, 0, 0);
   border-radius: 12px;
   padding: 12px 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   p {
     margin: 0;
     span {
@@ -112,6 +113,19 @@ body {
 }
 .monospace {
   font-family: "Cascadia Mono", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+@font-face {
+  font-family: 'C64 Pro Mono';
+  src: url('C64ProMono.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+.c64font {
+  font-family: "C64 Pro Mono";
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -145,7 +159,7 @@ input[type="file"] {
   background: white;
   font-size: 1em;
   cursor: pointer;
-  max-width: 200px;
+  max-width: 140px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
