@@ -89,7 +89,6 @@ body {
 }
 .text {
   text-align: left;
-  height: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,8 +100,13 @@ body {
   p {
     margin: 0;
     span {
-      white-space-collapse: preserve;
+      white-space: preserve nowrap;
     }
+  }
+}
+@media (max-width: 768px) {
+  .text {
+    font-size: 10px;
   }
 }
 @font-face {
