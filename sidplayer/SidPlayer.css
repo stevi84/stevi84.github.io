@@ -89,6 +89,8 @@ body {
 }
 .text {
   text-align: left;
+  min-height: 80px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -106,7 +108,8 @@ body {
 }
 @media (max-width: 768px) {
   .text {
-    font-size: 10px;
+    min-height: 45px;
+    font-size: 9px;
   }
 }
 @font-face {
@@ -152,19 +155,25 @@ body {
   border: 1px solid #ccc;
   background: white;
   font-size: 1em;
+  max-width: 120px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 input[type="file"] {
   display: none;
 }
 .customOpenFile {
+  box-sizing: border-box;
   padding: 5px 10px;
   border-radius: 6px;
   border: 1px solid #ccc;
   background: white;
   font-size: 1em;
   cursor: pointer;
-  max-width: 140px;
+  max-width: 120px;
   overflow: hidden;
+  white-space: nowrap;
   text-overflow: ellipsis;
 }
 .clearButton {
